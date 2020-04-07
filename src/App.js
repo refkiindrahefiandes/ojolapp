@@ -16,19 +16,13 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 import { NavigationContainer } from '@react-navigation/native';
+import Router from './router';
 
 
 const App = () => {
   return (
     <NavigationContainer>
-      <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
-        <ScrollView
-          contentInsetAdjustmentBehavior="automatic"
-          style={styles.scrollView}>
-          <Text>Aplikasi Ojek Online</Text>
-        </ScrollView>
-      </SafeAreaView>
+      <Router />
     </NavigationContainer>
   );
 };
